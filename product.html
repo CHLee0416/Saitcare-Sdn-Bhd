@@ -1,0 +1,1681 @@
+<html>
+    <head>
+        <title>Saitcare Hub Sdn Bhd</title>
+        <link rel="icon" type="image/jpg" href="pictures/logo.png">
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            /* Center website */
+            .main {
+                max-width: 1000px;
+                margin: auto;
+            }
+
+
+            h1 {
+                font-size: 50px;
+                text-align: center;
+                word-break: break-all;
+
+                color: black;
+            }
+
+            h2 {
+                background-color: #E6E6FA;
+                color: black;
+                padding: 20px;
+            }
+
+            h3{
+                font-size: 21px;
+                text-align: center;
+                color: #000; 
+            }
+
+            .section-title{
+                font-size:30px;
+                padding-top: 5vh;
+            }
+
+            .column h4{
+                font-size: 21px;
+                text-align: center;
+                text-shadow: 0 0 3px #FF0000;
+            }
+
+            .row {
+                margin: 10px -16px;
+            }
+
+            /* Add padding BETWEEN each column */
+            .row,
+            .row > .column {
+                padding: 8px;
+            }
+
+            /* Create three equal columns that floats next to each other */
+            .column {
+                float: left;
+                width: 33.33%;
+            }
+
+            /* Clear floats after rows */ 
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            /* Content */
+            .content {
+                background-color: lightgray;
+                padding: 10px;
+            }
+
+            .content img{
+                max-height: 210px;
+            }
+            /* The "show" class is added to the filtered elements */
+            .show {
+                display: block;
+            }
+
+            /* Style the buttons */
+            .btn {
+                border: none;
+                outline: none;
+                padding: 12px 16px;
+                cursor: pointer;
+            }
+
+            .btn:hover {
+                background-color: #ddd;
+            }
+
+            .btn.active {
+                background-color: #999;
+                color: white;
+            }
+
+            .button {
+                background-color: #3E3345;
+                border: none;
+                color: white;
+                padding: 1vh 20vh;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 20px;
+                margin: 4px 16px;
+                cursor: pointer;
+            }
+        </style>
+    </head> 
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="pictures/logo.png"><span>SAITCARE HUB</span></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link" href="index.html">Home</a>
+                            <a class="nav-item nav-link" href="profile.html">About Us</a>
+                            <a class="nav-item nav-link  active" href="product.html">Product</a>
+                            <a class="nav-item nav-link" href="order.html">Order Here</a>
+                            <a class="nav-item nav-link" href="contact.html">Contact Us</a>
+                            <a class="nav-item nav-link" href="developer.html">Developer</a>
+                        </div>
+                    </div>
+                </div> 
+            </nav>
+        </header>
+        <!-- MAIN (Center website) -->
+        <div class="main" id="product">
+            <br>
+            <h1>Product</h1>
+            <hr>
+
+            <h2>Product Description</h2>
+
+            <div id="myBtnContainer">
+            <button class="btn shadow-none" onclick="displayAll()"> Show all</button>
+            <button class="btn shadow-none" onclick="displayLaptop()"> Laptop</button>
+            <button class="btn shadow-none" onclick="displayPrinter()"> Printer</button>
+            <button class="btn shadow-none" onclick="displayEarphone()"> Earphone</button>
+            <button class="btn shadow-none" onclick="displayEarphone()"> Mouse</button>
+            </div>
+
+            <!-- Product Description Gallery Grid -->
+            <div id="laptop">
+                <h3 class="title section-title"><b>ASUS Gaming Laptop</b></h3>
+                <h4 class="title">ROG Flow Z13 (2022)</h4>
+                <div class="row">
+                    <div class="column Laptop">
+                        <div class="content">
+                            <img  src="https://dlcdnwebimgs.asus.com/gain/1B8CFD05-AA6F-4A6F-90F7-D3E3813BBD65/w185/fwebp" alt="ASUSgaming Laptop"style="width:100%"> 
+                            <h3><u>GZ301Z-ELD236W</u></h3>
+                            <h4>RM 8,999</h4>
+                            <div class="d-flex justify-content-around">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-dark shadow-none" data-toggle=modal data-target="#GZ301Z-ELD236W">Know more</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="GZ301Z-ELD236W" tabindex="-1" role="dialog" aria-labelledby="GZ301Z-CLD132W" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">GZ301Z-ELD236W</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="column-md-4">
+                                                            <img class="img-fluid" src="https://dlcdnwebimgs.asus.com/gain/1B8CFD05-AA6F-4A6F-90F7-D3E3813BBD65/w185/fwebp">
+                                                        </div>
+                                                        <div class=column-md-8>
+                                                            <ul>
+                                                                <li>Price: RM8,999</li>
+                                                                <li>Colour: Black</li>
+                                                                <li>Processor: Intel® Core™ i9-12900H</li>
+                                                                <li>OS: Windows 11 Home</li>
+                                                                <li>Display: 13.4"WUXGA (1920 x 1200) 16:10</li>
+                                                                <li>Graphic Card: NVIDIA® GeForce RTX™ 3050 Ti 4GB GDDR6</li>
+                                                                <li>Memory: DDR5 5200 8G*2</li>
+                                                                <li>Hard Drive: 1TB M.2 NVMe™ PCIe® 4.0 SSD</li>
+                                                                <li>Connection Technologies: Wi-Fi 6E(802.11ax)+Bluetooth 5.2 (Dual band) 2*2</li>
+                                                                Add on:
+                                                                <li>2Y Global with 1st year Perfect Warranty</li>
+                                                                <li>ROG Sleeve, ASUS Pen, ROG Impact Gaming Mouse</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                                                    <button type="button" class="btn btn-dark shadow-none" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="column Laptop">
+                        <div class="content">
+                            <img  src="https://dlcdnwebimgs.asus.com/gain/1B8CFD05-AA6F-4A6F-90F7-D3E3813BBD65/w185/fwebp" alt="ASUSgaming Laptop"style="width:100%"> 
+                            <h3><u>GZ301Z-CLD132W</u></h3>
+                            <h4>RM 7,999</h4>
+                            <div class="d-flex justify-content-around">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-dark shadow-none" data-toggle=modal data-target="#GZ301Z-CLD132W">Know more</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="GZ301Z-CLD132W" tabindex="-1" role="dialog" aria-labelledby="GZ301Z-CLD132W" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">GZ301Z-CLD132W</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="column-md-4">
+                                                            <img class="img-fluid" src="https://dlcdnwebimgs.asus.com/gain/1B8CFD05-AA6F-4A6F-90F7-D3E3813BBD65/w185/fwebp">
+                                                        </div>
+                                                        <div class=column-md-8>
+                                                            <ul>
+                                                                <li>Price: RM 7,999</li>
+                                                                <li>Colour: Black</li>
+                                                                <li>Processor: Intel® Core™ i7-12700H</li>
+                                                                <li>OS: Windows 11 Home</li>
+                                                                <li>Display: 13.4"WUXGA (1920 x 1200) 16:10</li>
+                                                                <li>Graphic Card: NVIDIA® GeForce RTX™ 3050 4GB GDDR6</li>
+                                                                <li>Memory: DDR5 5200 8G*2</li>
+                                                                <li>Hard Drive: 512GB M.2 NVMe™ PCIe® 4.0 SSD</li>
+                                                                <li>Connection Technologies: Wi-Fi 6E(802.11ax)+Bluetooth 5.2 (Dual band) 2*2</li>
+                                                                Add on:
+                                                                <li>2Y Global with 1st year Perfect Warranty</li>
+                                                                <li>ROG Sleeve, ASUS Pen, ROG Impact Gaming Mouse</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                                                    <button type="button" class="btn btn-dark shadow-none" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="column Laptop">
+                        <div class="content">
+                            <img  src="https://dlcdnwebimgs.asus.com/gain/1B8CFD05-AA6F-4A6F-90F7-D3E3813BBD65/w185/fwebp" alt="ASUSgaming Laptop"style="width:100%"> 
+                            <h3><u>GZ301Z-ELC214W</u></h3>
+                            <h4>RM 16,999</h4>
+                            <div class="d-flex justify-content-around">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-dark shadow-none" data-toggle=modal data-target="#GZ301Z-ELC214W">Know more</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="GZ301Z-ELC214W" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">GZ301Z-ELC214W</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="column-md-4">
+                                                            <img class="img-fluid" src="https://dlcdnwebimgs.asus.com/gain/1B8CFD05-AA6F-4A6F-90F7-D3E3813BBD65/w185/fwebp">
+                                                        </div>
+                                                        <div class=column-md-8>
+                                                            <ul>
+                                                                <li>Price: RM 16,999</li>
+                                                                <li>Colour: Black</li>
+                                                                <li>Processor: Intel® Core™ i9-12900H</li>
+                                                                <li>OS: Windows 11 Home</li>
+                                                                <li>Display: 13.4" WQUXGA / IPS Panel / 60Hz / 85% DCI-P3 / Adaptive-Sync / Pantone Validated</li>
+                                                                <li>Graphic Card: NVIDIA® GeForce RTX™ 3050 Ti 4GB GDDR6</li>
+                                                                <li>Memory: DDR5 5200 8G*2</li>
+                                                                <li>Hard Drive: 2TB M.2 NVMe™ PCIe® 4.0 SSD</li>
+                                                                <li>Connection Technologies: Wi-Fi 6E(802.11ax)+Bluetooth 5.2 (Dual band) 2*2</li>
+                                                                Add on:
+                                                                <li>2Y Global with 1st year Perfect Warranty</li>
+                                                                <li>ROG Sleeve, ASUS Pen, ROG Chakram Core Gaming Mouse, ROG Delta Headset & ROG XG Mobile(GC31S with NVIDIA® GeForce RTX™ 3080)</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                                                    <button type="button" class="btn btn-dark shadow-none" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+                <h4 class="title">ROG Flow X13(2022)</h4>
+                <div class="row">
+                    <div class="column Laptop">
+                        <div class="content">
+                            <img  src="https://dlcdnwebimgs.asus.com/gain/A09C5B64-3AE4-4B00-B5B6-1FF96B1814C5/w185/fwebp" alt="ASUSgaming Laptop"style="width:100%"> 
+                            <h3><u>GV301R-CLJ056W</u></h3>
+                            <h4>RM 6,599</h4>
+                            <div class="d-flex justify-content-around">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-dark shadow-none" data-toggle=modal data-target="#GV301R-CLJ056W">Know more</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="GV301R-CLJ056W" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">GV301R-CLJ056W</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="column-md-4">
+                                                            <img class="img-fluid" src="https://dlcdnwebimgs.asus.com/gain/A09C5B64-3AE4-4B00-B5B6-1FF96B1814C5/w185/fwebp">
+                                                        </div>
+                                                        <div class=column-md-8>
+                                                            <ul>
+                                                                <li>Price: RM 6,599</li>
+                                                                <li>Colour: Off Black</li>
+                                                                <li>Processor: AMD Ryzen™ 7 6800H</li>
+                                                                <li>OS: Windows 11 Home</li>
+                                                                <li>Display: 13.4" 16:10 / WQUXGA (3840 x 2400) / IPS Panel / 60Hz / 116% sRGB / 450nits / 89 Wide View / Touch screen</li>
+                                                                <li>Graphic Card: NVIDIA® GeForce RTX™ 3050 Ti 4GB GDDR6</li>
+                                                                <li>Memory: LPDDR5 16G*2</li>
+                                                                <li>Hard Drive: 1TB M.2 NVMe™ PCIe® 4.0 SSD</li>
+                                                                <li>Connection Technologies: Wi-Fi 6E(802.11ax) (Dual band) 2*2 + Bluetooth 5.2</li>
+                                                                Add on:
+                                                                <li>2Y Global with 1st year Perfect Warranty</li>
+                                                                <li>ROG Sleeve, ASUS Pen</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                                                    <button type="button" class="btn btn-dark shadow-none" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="column Laptop">
+                        <div class="content">
+                            <img  src="https://dlcdnwebimgs.asus.com/gain/A09C5B64-3AE4-4B00-B5B6-1FF96B1814C5/w185/fwebp" alt="ASUSgaming Laptop"style="width:100%"> 
+                            <h3><u>GV301R-ELI192W</u></h3>
+                            <h4>RM 13,999</h4>
+                            <div class="d-flex justify-content-around">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-dark shadow-none" data-toggle=modal data-target="#GV301R-ELI192W">Know more</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="GV301R-ELI192W" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">GZ301Z-CLD132W</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="column-md-4">
+                                                            <img class="img-fluid" src="https://dlcdnwebimgs.asus.com/gain/A09C5B64-3AE4-4B00-B5B6-1FF96B1814C5/w185/fwebp">
+                                                        </div>
+                                                        <div class=column-md-8>
+                                                            <ul>
+                                                                <li>Price: RM 13,999</li>
+                                                                <li>Colour: Off Black</li>
+                                                                <li>Processor: AMD Ryzen™ 7 6800H</li>
+                                                                <li>OS: Windows 11 Home</li>
+                                                                <li>Display: 13.4" 16:10 / WQUXGA (3840 x 2400) / IPS Panel / 60Hz / 116% sRGB / 450nits / 89 Wide View / Touch screen</li>
+                                                                <li>Graphic Card: NVIDIA® GeForce RTX™ 3050 Ti 4GB GDDR6</li>
+                                                                <li>Memory: LPDDR5 16G*2</li>
+                                                                <li>Hard Drive: 1TB M.2 NVMe™ PCIe® 4.0 SSD</li>
+                                                                <li>Connection Technologies: Wi-Fi 6E(802.11ax) (Dual band) 2*2 + Bluetooth 5.2</li>
+                                                                Add on:
+                                                                <li>2Y Global with 1st year Perfect Warranty</li>
+                                                                <li>ROG Sleeve, ASUS Pen, ROG Impact Gaming Mouse , XG mobile (RX6850M)</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>  
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                                                    <button type="button" class="btn btn-dark shadow-none" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="column Laptop">
+                        <div class="content">
+                            <img  src="https://dlcdnwebimgs.asus.com/gain/A09C5B64-3AE4-4B00-B5B6-1FF96B1814C5/w185/fwebp" alt="ASUSgaming Laptop"style="width:100%"> 
+                            <h3><u>GV301Q-HK6306</u></h3>
+                            <h4>RM 5,999</h4>
+                            <div class="d-flex justify-content-around">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-dark shadow-none" data-toggle=modal data-target="#GV301Q-HK6306">Know more</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="GV301Q-HK6306" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">GV301Q-HK6306</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="column-md-4">
+                                                            <img class="img-fluid" src="https://dlcdnwebimgs.asus.com/gain/A09C5B64-3AE4-4B00-B5B6-1FF96B1814C5/w185/fwebp">
+                                                        </div>
+                                                        <div class=column-md-8>
+                                                            <ul>
+                                                                <li>Price: RM 5,999</li>
+                                                                <li>Colour: Off Black</li>
+                                                                <li>Processor: Windows 10 (64bit)</li>
+                                                                <li>OS: Windows 11 Home</li>
+                                                                <li>Display: 13.4" 16:10 / (1920*1200) / IPS Panel / 120Hz / 100% sRGB / 300nits / 170 Wide View / Anti-glare / Touch screen</li>
+                                                                <li>Graphic Card: NVIDIA GeForce GTX1650</li>
+                                                                <li>Memory: DDR4 4266 16G</li>
+                                                                <li>Hard Drive: PCIe G3x4 NVME 512GB M.2 SSD</li>
+                                                                <li>Connection Technologies: Intel Wi-Fi 6(Gig+)(802.11ax)+Bluetooth 5.1 (Dual band) 2*2</li>
+                                                                Add on:
+                                                                <li>2Y Global with 1st year Perfect Warranty</li>
+                                                                <li>RGV301 sleeve bag+ Flow Stylus + 100W Type-C power adapter</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                                                    <button type="button" class="btn btn-dark shadow-none" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="title section-title"><b>DELL Gaming Laptop</b></h3>
+                <h4 class="title">G15 Gaming Laptop</h4>
+                <div class="row">
+                    <div class="column Laptop">
+                        <div class="content">
+                            <img src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/g-series/g15-5521-se/media-gallery/g15-5521-se-bk-rgbkb-115w/notebook-g-15-5521-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&wid=4438&hei=3618&qlt=100,0&resMode=sharp2&size=4438,3618" alt="DELLgaming Laptop" style="width:100%"> 
+                            <h3><u>New 15"</u></h3>
+                            <h4>RM 6,199</h4>
+                            <div class="d-flex justify-content-around">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-dark shadow-none" data-toggle=modal data-target="#New15-1">Know more</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="New15-1" tabindex="-1" role="dialog" aria-labelledby="New 15" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">New 15"</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="column-md-4">
+                                                            <img class="img-fluid" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/g-series/g15-5521-se/media-gallery/g15-5521-se-bk-rgbkb-115w/notebook-g-15-5521-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&wid=4438&hei=3618&qlt=100,0&resMode=sharp2&size=4438,3618">
+                                                        </div>
+                                                        <div class=column-md-8>
+                                                            <ul>
+                                                                <li>Price: RM 6,199</li>
+                                                                <li>Colour: Obsidian Black Special Edition</li>
+                                                                <li>Processor: 12th Gen Intel® Core™ i7-12700H</li>
+                                                                <li>OS: Windows 11 Home</li>
+                                                                <li>Display: 15.6-in. display (1920X1080) 120Hz Non-Touch AG WVA LED-Backlit 300 nit Narrow Border</li>
+                                                                <li>Graphic Card: NVIDIA® GeForce RTX™ 3050 4 GB GDDR6</li>
+                                                                <li>Memory: 16 GB, 2 x 8 GB, DDR5, 4800 MHz, dual-channel</li>
+                                                                <li>Hard Drive: 1 TB M.2 Gen 4 PCIe SSD</li>
+                                                                <li>Connection Technologies: Killer Wi-Fi 6 AX1650 (2x2) and Bluetooth 5.2</li>
+                                                                Add on:
+                                                                <li>Support Service: 2Y Premium Support and Onsite Service</li>
+                                                                <li>Power: 180W AC Adapter</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                                                    <button type="button" class="btn btn-dark shadow-none" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="column Laptop">
+                        <div class="content">
+                            <img  src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/g-series/g15-5525/media-gallery/g15-5525-bk-coralkb/notebook-g-15-5525-black-coralkb-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&wid=4055&hei=3565&qlt=100,0&resMode=sharp2&size=4055,3565" alt="DELL gaming Laptop"style="width:100%"> 
+                            <h3><u>New 15" AMD</u></h3>
+                            <h4>RM 3,999</h4>
+                            <div class="d-flex justify-content-around">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-dark shadow-none" data-toggle=modal data-target="#New15-AMD ">Know more</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="New15-AMD" tabindex="-1" role="dialog" aria-labelledby="GZ301Z-CLD132W" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">New 15" AMD </h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="column-md-4">
+                                                            <img class="img-fluid" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/g-series/g15-5525/media-gallery/g15-5525-bk-coralkb/notebook-g-15-5525-black-coralkb-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&wid=4055&hei=3565&qlt=100,0&resMode=sharp2&size=4055,3565">
+                                                        </div>
+                                                        <div class=column-md-8>
+                                                            <ul>
+                                                                <li>Price: RM 3,999</li>
+                                                                <li>Colour: Dark Shadow Grey</li>
+                                                                <li>Processor: AMD Ryzen™5 6600H 6-Cores</li>
+                                                                <li>OS: Windows 11 Home</li>
+                                                                <li>Display: 13.4"WUXGA (1920 x 1200) 16:10</li>
+                                                                <li>Graphic Card: NVIDIA® GeForce RTX™ 3050 4 GB GDDR6</li>
+                                                                <li>Memory: 1 x 8 GB DDR5 4800 MHz</li>
+                                                                <li>Hard Drive: 256 GB M.2 Gen 4 PCIe SSD</li>
+                                                                <li>Connection Technologies: MediaTek Wi-Fi 6 MT7921 2x2 + Bluetooth</li>
+                                                                Add on:
+                                                                <li>Support Service: 2Y Premium Support and Onsite Service</li>
+                                                                <li>Power: 180W AC Adapter</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                                                    <button type="button" class="btn btn-dark shadow-none" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="column Laptop">
+                        <div class="content">
+                            <img  src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/g-series/g15-5520/media-gallery/g15-5520-bk-coralkb/notebook-g-15-5520-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=457&qlt=100,0&resMode=sharp2&size=457,402" alt="ASUSgaming Laptop"style="width:100%"> 
+                            <h3><u>New 15"</u></h3>
+                            <h4>RM 4,099</h4>
+                            <div class="d-flex justify-content-around">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-dark shadow-none" data-toggle=modal data-target="#New15-2">Know more</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="New15-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">New 15"</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="column-md-4">
+                                                            <img class="img-fluid" src="https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/g-series/g15-5520/media-gallery/g15-5520-bk-coralkb/notebook-g-15-5520-gallery-1.psd?fmt=png-alpha&pscan=auto&scl=1&hei=402&wid=457&qlt=100,0&resMode=sharp2&size=457,402">
+                                                        </div>
+                                                        <div class=column-md-8>
+                                                            <ul>
+                                                                <li>Price: RM 4,099</li>
+                                                                <li>Colour: Dark Shadow Grey</li>
+                                                                <li>Processor: 12th Gen Intel® Core™ i5-12500H</li>
+                                                                <li>OS: Windows 11 Home</li>
+                                                                <li>Display: 13.4" WQUXGA / IPS Panel / 60Hz / 85% DCI-P3 / Adaptive-Sync / Pantone Validated</li>
+                                                                <li>Graphic Card: NVIDIA® GeForce RTX™ 3050 4 GB GDDR6</li>
+                                                                <li>Memory: 1 x 8 GB DDR5 4800 MHz</li>
+                                                                <li>Hard Drive: 256 GB M.2 Gen 4 PCIe SSD</li>
+                                                                <li>Connection Technologies: Intel® Wi-Fi 6 AX201 (2x2) Wi-Fi + Bluetooth</li>
+                                                                Add on:
+                                                                <li>Support Service: 2Y Premium Support and Onsite Service</li>
+                                                                <li>Power: 180W AC Adapter</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                                                    <button type="button" class="btn btn-dark shadow-none" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                <h3 class="title section-title"><b>ACER Gaming Laptop</b></h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h4 class="title">Acer Nitro 5</h4>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 class="title">Acer Predator Helios 300</h4>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="column Laptop">
+                        <div class="content">
+                            <img src="pictures/acer-nitro-1.png" alt="ACERgaming Laptop" style="width:100%"> 
+                            <h3><u>AN515-45-R9NK</u></h3>
+                            <h4>RM 3,999</h4>
+                            <div class="d-flex justify-content-around">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-dark shadow-none" data-toggle=modal data-target="#AN515-45-R9NK">Know more</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="AN515-45-R9NK" tabindex="-1" role="dialog" aria-labelledby="New 15" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">AN515-45-R9NK</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="column-md-4">
+                                                            <img class="img-fluid" src="pictures/acer-nitro-1.png">
+                                                        </div>
+                                                        <div class=column-md-8>
+                                                            <ul>
+                                                                <li>Price: RM 3,999</li>
+                                                                <li>Colour: Black</li>
+                                                                <li>Processor: AMD Ryzen™ 5 5600H hexa-core</li>
+                                                                <li>OS: Windows 11 Home</li>
+                                                                <li>Display: 15.6" 144Hz 45% NTSC FHD Slim Bezel IPS</li>
+                                                                <li>Graphic Card: NVIDIA® GeForce® RTX3050Ti 4GB GDDR6</li>
+                                                                <li>Memory: 8GB DDR4 RAM (upgradable to 32GB RAM using 2 x 16GB)</li>
+                                                                <li>Hard Drive: 512GB SSD; 1 additional HDD slot (HDD Upgrade Kit included in box)</li>
+                                                                <li>Connection Technologies: Wi-Fi 6 and Bluetooth®️ 5.0</li>
+                                                                Add on:
+                                                                <li>Support Service: 2 Years Local Warranty with 1st Year International Travelers Warranty (ITW)</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                                                    <button type="button" class="btn btn-dark shadow-none" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="column Laptop">
+                        <div class="content">
+                            <img src="pictures/acer-nitro-2.png" alt="ACER gaming Laptop"style="width:100%"> 
+                            <h3><u>AN515-57-76RF</u></h3>
+                            <h4>RM 4,799</h4>
+                            <div class="d-flex justify-content-around">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-dark shadow-none" data-toggle=modal data-target="#AN515-57-76RF">Know more</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="AN515-57-76RF" tabindex="-1" role="dialog" aria-labelledby="GZ301Z-CLD132W" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">AN515-57-76RF</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="column-md-4">
+                                                            <img class="img-fluid" src="pictures/acer-nitro-2.png">
+                                                        </div>
+                                                        <div class=column-md-8>
+                                                            <ul>
+                                                                <li>Price: RM 4,799</li>
+                                                                <li>Colour: Black</li>
+                                                                <li>Processor: Intel® Core™ i7-11800H</li>
+                                                                <li>OS: Windows 11 Home</li>
+                                                                <li>Display: 15.6" 144Hz FHD Slim Bezel 45% NTSC IPS Display</li>
+                                                                <li>Graphic Card: NVIDIA® GeForce RTX™ 3050 4GB GDDR6 (75W)</li>
+                                                                <li>Memory: 8GB DDR4 RAM (upgradable to 32GB RAM using 2 x 16GB)</li>
+                                                                <li>Hard Drive: 512GB SSD (1 additional PCIe M.2 slot) ; 1 additional HDD slot(HDD Upgrade Kit included in box)</li>
+                                                                <li>Connection Technologies: Killer Wi-Fi 6 AX1650 and Bluetooth®️ 5.1</li>
+                                                                Add on:
+                                                                <li>Support Service: 2 Years Local Warranty with 1st Year International Travelers Warranty (ITW)</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                                                    <button type="button" class="btn btn-dark shadow-none" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="column Laptop">
+                        <div class="content">
+                        <img  src="pictures/acer-predator.png" alt="ACER gaming Laptop"style="width:100%"> 
+                        <h3><u>PH317-55-76CR</u></h3>
+                        <h4>RM 6,999</h4>
+                        <div class="d-flex justify-content-around">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-dark shadow-none" data-toggle=modal data-target="#PH317-55-76CR">Know more</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="PH317-55-76CR" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">PH317-55-76CR</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="container-fluid">
+                                                <div class="row">
+                                                    <div class="column-md-4">
+                                                        <img class="img-fluid" src="pictures/acer-predator.png">
+                                                    </div>
+                                                    <div class=column-md-8>
+                                                        <ul>
+                                                            <li>Price: RM 6,999</li>
+                                                            <li>Colour: Black</li>
+                                                            <li>Processor: Intel® Core™ i7-11800H 8-core</li>
+                                                            <li>OS: Windows 10 Home</li>
+                                                            <li>Display: 17.3" 360Hz FHD Slim Bezel 100% sRGB IPS Display</li>
+                                                            <li>Graphic Card: NVIDIA® GeForce RTX™ 3060</li>
+                                                            <li>Memory: 16GB DDR4 (1 x 16GB 3200Mhz DDR4 RAM) 1 extra RAM Slot</li>
+                                                            <li>Hard Drive: 512GB PCIe NVMe Gen4 SSD (with 1 extra SSD slot and 1 extra HDD slot)</li>
+                                                            <li>Connection Technologies: Wireless LAN Standard(IEEE 802.11a/b/g/n/acR2+ax) and Bluetooth®️ 5.1</li>
+                                                            Add on:
+                                                            <li>Support Service: 2 Years OnSite Warranty + Acidental Damage / Theft</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>      
+                                            <div class="modal-footer">
+                                                <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                                                <button type="button" class="btn btn-dark shadow-none" data-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Printer">
+                <h3 class="title section-title"><b>HP Printers</b></h3>
+                <h4 class="title">Business Printers</h4>
+                <div class="row">
+                    <div class="column printer">
+                        <div class="content">
+                            <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c06324688.png" alt="HP printers" style="width:100%"> 
+                            <h3><u>HP LaserJet Pro M404dn</u></h3>
+                            <h4>RM 369</h4>
+                            <div class="d-flex justify-content-around">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-dark shadow-none" data-toggle=modal data-target="#hP-business-1">Know more</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="hP-business-1" tabindex="-1" role="dialog" aria-labelledby="HP LaserJet Pro M404dn" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">HP LaserJet Pro M404dn</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="column-md-4">
+                                                            <img class="img-fluid" src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c06324688.png">
+                                                        </div>
+                                                        <div class=column-md-8>
+                                                            <ul>
+                                                                <li>Price: RM 369</li>
+                                                                <li>Functions: Print only</li>
+                                                                <li>Print speed letter: Up to 40 ppm (black)</li>
+                                                                <li>Auto duplex printing; 2 paper trays (standard)</li>
+                                                                <li>Best-in-class security-detect and stop attacks</li>
+                                                                <li>Support Service: 1-Year Standard Warranty</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>     
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                                                    <button type="button" class="btn btn-dark shadow-none" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="column printer">
+                        <div class="content">
+                            <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c03816086.png" alt="HP printers" style="width:100%"> 
+                            <h3><u>HP DesignJet T230</u></h3>
+                            <h4>RM 899</h4>
+                            <div class="d-flex justify-content-around">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-dark shadow-none" data-toggle=modal data-target="#hP-business-2">Know more</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="hP-business-2" tabindex="-1" role="dialog" aria-labelledby="HP LaserJet Pro M404dn" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">HP DesignJet T230 Large Format Compact Wireless Plotter Printer - 24", with Mobile Printing (5HB07A)</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="column-md-4">
+                                                            <img class="img-fluid" src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c03816086.png">
+                                                        </div>
+                                                        <div class=column-md-8>
+                                                            <ul>
+                                                                <li>Price: RM 899</li>
+                                                                <li>Functions: Print only</li>
+                                                                <li>Print speed letter: Up to 55 ppm (black)</li>
+                                                                <li>Prints up to 11x17"; Auto duplex printing; 3 paper trays (standard)</li>
+                                                                <li>FCC: FCC Class A emissions - for use in commercial environments, not residential environments</li>
+                                                                <li>Support Service: 1-Year Standard Warranty</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                                                    <button type="button" class="btn btn-dark shadow-none" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="column printer">
+                        <div class="content">
+                            <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c06904358.png" alt="HP printers" style="width:100%"> 
+                            <h3><u>HP DesignJet T230</u></h3>
+                            <h4>RM 899</h4>
+                            <div class="d-flex justify-content-around">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-dark shadow-none" data-toggle=modal data-target="#hP-business-3">Know more</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="hP-business-3" tabindex="-1" role="dialog" aria-labelledby="HP LaserJet Pro M404dn" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModelTitleLong">HP DesignJet T230</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="column-md-4">
+                                                            <img class="img-fluid" src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c06904358.png">
+                                                        </div>
+                                                        <div class=column-md-8>
+                                                            <ul>
+                                                                <li>Price: RM 899</li>
+                                                                <li>Functions: Print only</li>
+                                                                <li>Print speed,maximum: 35 sec/page on D, 68 D prints per hour</li>
+                                                                <li>Resolution (color): Resolution (color)</li>
+                                                                <li>Compatible ink types: Dye-based (C, M, Y); pigment-based (K)</li>
+                                                                <li>Finished output handling: Sheet feed, roll feed, automatic horizontal cutter, optional automatic sheet feeder includes tray</li>
+                                                                <li>Compliant with Class B requirements, including: USA (FCC rules)</li>
+                                                                <li>Support Service: 1-Year Standard Warranty</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                                                    <button type="button" class="btn btn-dark shadow-none" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="title Printer">Home Printers</h4>
+                <div class="row">
+                    <div class="column printer">
+                        <div class="content">
+                            <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c07730459.png" alt="HP printers" style="width:100%"> 
+                            <h3><u>HP Smart Tank 7301</u></h3>
+                            <h4>RM 460</h4>
+                            <div class="d-flex justify-content-around">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-dark shadow-none" data-toggle=modal data-target="#hP-home-1">Know more</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="hP-home-1" tabindex="-1" role="dialog" aria-labelledby="HP LaserJet Pro M404dn" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">HP Smart Tank 7301 All-in-One Printer</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="column-md-4">
+                                                            <img class="img-fluid" src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c07730459.png">
+                                                        </div>
+                                                        <div class=column-md-8>
+                                                            <ul>
+                                                                <li>Price: RM 460</li>
+                                                                <li>Functions: Print, scan, copy, ADF, duplex, wireless</li>
+                                                                <li>Print speed ISO: Up to 15 ppm black, up to 9 ppm color</li>
+                                                                <li>Self-healing Wi-Fi helps keep you connected</li>
+                                                                <li>Up to 2 years of ink in bottles included in the box</li>
+                                                                <li>Support Service: 1-Year Standard Warranty</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                                                    <button type="button" class="btn btn-dark shadow-none" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="column printer">
+                        <div class="content">
+                            <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c07936205.png" alt="HP printers" style="width:100%"> 
+                            <h3><u>HP ENVY Inspire 7255e</u></h3>
+                            <h4>RM 230</h4>
+                            <div class="d-flex justify-content-around">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-dark shadow-none" data-toggle=modal data-target="#hP-home-2">Know more</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="hP-home-2" tabindex="-1" role="dialog" aria-labelledby="HP LaserJet Pro M404dn" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">HP ENVY Inspire 7255e All-in-One Printer</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="column-md-4">
+                                                            <img class="img-fluid" src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c07936205.png">
+                                                        </div>
+                                                        <div class=column-md-8>
+                                                            <ul>
+                                                                <li>Price: RM 230</li>
+                                                                <li>Functions: Print, copy, scan, photo, built-in photo tray, wireless</li>
+                                                                <li>Home and work documents, creative projects, advanced photo features</li>
+                                                                <li>HP+ requires HP account, internet, works only with original HP ink</li>
+                                                                <li>Support Service: 1-Year Standard Warranty</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                                                    <button type="button" class="btn btn-dark shadow-none" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="column printer">
+                        <div class="content">
+                            <img src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c06728699.png" alt="HP printers" style="width:100%"> 
+                            <h3><u>HP OfficeJet Pro 8025e</u></h3>
+                            <h4>RM 225</h4>
+                            <div class="d-flex justify-content-around">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-dark shadow-none" data-toggle=modal data-target="#hP-home-3">Know more</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="hP-home-3" tabindex="-1" role="dialog" aria-labelledby="HP LaserJet Pro M404dn" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModelTitleLong">HP OfficeJet Pro 8025e All-in-One Printer</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="column-md-4">
+                                                            <img class="img-fluid" src="https://ssl-product-images.www8-hp.com/digmedialib/prodimg/lowres/c06728699.png">
+                                                        </div>
+                                                        <div class=column-md-8>
+                                                            <ul>
+                                                                <li>Price: RM 225</li>
+                                                                <li>Functions: Fast color print, copy, scan, fax, 2-sided prints, mobile/wireless printing</li>
+                                                                <li>Pro quality color for forms, reports, brochures and presentations</li>
+                                                                <li>Prints up to 11x17"; Auto duplex printing; 3 paper trays (standard)Includes 6 months Instant Ink and more with optional HP+ printing system</li>
+                                                                <li>HP+ requires HP account, internet, works only with original HP ink</li>
+                                                                <li>Support Service: One-year limited hardware warranty; 24-hour, 7 days a week Web support; business hour phone support within warranty period.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                                                    <button type="button" class="btn btn-dark shadow-none" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>            
+                </div>
+
+                <h3 class="title section-title Printer"><b>Canon Printers</b></h3>
+                <h4 class="title Printer">Inkjet Printers</h4>
+                    <div class="row">
+                        <div class="column printer">
+                            <div class="content">
+                                <img src="https://my.canon/media/image/2021/06/21/9cb874960f454acbaeea5d303cd0e37d_TR46XX-TR47XX-series_AS_FR_BK-362x320.png" alt="Canon printers" style="width:100%"> 
+                                <h3><u>PIXMA TR4670S</u></h3>
+                                <h4>RM 439</h4>
+                                <div class="d-flex justify-content-around">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-dark shadow-none" data-toggle=modal data-target="#canon-1">Know more</button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="canon-1" tabindex="-1" role="dialog" aria-labelledby="PIXMA TR4670S" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">PIXMA TR4670S</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="column-md-4">
+                                                            <img class="img-fluid" src="https://my.canon/media/image/2021/06/21/9cb874960f454acbaeea5d303cd0e37d_TR46XX-TR47XX-series_AS_FR_BK-362x320.png">
+                                                        </div>
+                                                        <div class=column-md-8>
+                                                            <ul>
+                                                                <li>Price: RM 439</li>
+                                                                <li>Functions: Print, Scan, Copy, Fax</li>
+                                                                <li>ISO standard print speed (A4): up to 8.8 ipm black / 4.4 ipm</li>
+                                                                <li>Wireless, Mopria, AirPrint, Direct Wireless</li>
+                                                                <li>Recommended print volume: 30 to 100 pages</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                                                    <button type="button" class="btn btn-dark shadow-none" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                                </div> 
+                            </div>
+                        </div>
+            
+                        <div class="column printer">
+                            <div class="content">
+                                <img src="https://my.canon/media/image/2020/08/26/15f1bc6ed2c841acb9e91d369711dbb4_TS34xx_AS_FR_cl2_blk_en-362x320.png" alt="Canon printers" style="width:100%"> 
+                                <h3><u>PIXMA TS3470</u></h3>
+                                <h4>RM 349</h4>
+                                <div class="d-flex justify-content-around">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-dark shadow-none" data-toggle=modal data-target="#canon-2">Know more</button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="canon-2" tabindex="-1" role="dialog" aria-labelledby="HP LaserJet Pro M404dn" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLongTitle">PIXMA TS3470</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="column-md-4">
+                                                                <img class="img-fluid" src="https://my.canon/media/image/2020/08/26/15f1bc6ed2c841acb9e91d369711dbb4_TS34xx_AS_FR_cl2_blk_en-362x320.png">
+                                                            </div>
+                                                            <div class=column-md-8>
+                                                                <ul>
+                                                                    <li>Price: RM 349</li>
+                                                                    <li>Functions: Print, Scan, Copy</li>
+                                                                    <li>ISO standard print speed (A4): Up to 7.7 ipm black / 4.0 ipm colour</li>
+                                                                    <li>Wireless, Wireless PictBridge, Mopria, AirPrint, Wireless Direct</li>
+                                                                    <li>Recommended print volume: 50 - 200 pages</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                                                        <button type="button" class="btn btn-dark shadow-none" data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="column printer">
+                            <div class="content">
+                                <img src="https://my.canon/media/image/2019/07/22/ad092fa957ef41e2bd18ba46587441f9_TS53XX_AS_FR_cl_blk_en-362.png" alt="Canon printers" style="width:100%"> 
+                                <h3><u>PIXMA TS5370 / TS5370a</u></h3>
+                                <h4>RM 569</h4>
+                                <div class="d-flex justify-content-around">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-dark shadow-none" data-toggle=modal data-target="#canon-3">Know more</button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="canon-3" tabindex="-1" role="dialog" aria-labelledby="HP LaserJet Pro M404dn" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModelTitleLong">PIXMA TS5370 / TS5370a</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="container-fluid">
+                                                        <div class="row">
+                                                            <div class="column-md-4">
+                                                                <img class="img-fluid" src="https://my.canon/media/image/2019/07/22/ad092fa957ef41e2bd18ba46587441f9_TS53XX_AS_FR_cl_blk_en-362.png">
+                                                            </div>
+                                                            <div class=column-md-8>
+                                                                <ul>
+                                                                    <li>Price: RM 569</li>
+                                                                    <li>Functions: Print, Scan, Copy</li>
+                                                                    <li>ISO standard print speed (A4): up to 13.0 ipm black / 6.8 ipm colour</li>
+                                                                    <li>Wireless, Mopria, AirPrint, BLE1, Direct Wireless</li>
+                                                                    <li>Recommended monthly print volume: 30 - 100 pages</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                                                        <button type="button" class="btn btn-dark shadow-none" data-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div id="earphone">
+                <h3 class="section-title"><b>Sony Headphones</b></h3>
+                <h4>Headband</h4>
+                <div class="row">
+                    <div class="column earphone">
+                        <div class="content">
+                            <img src="pictures/headphone-1.png" alt="Sony Headband" style="width:100%"> 
+                            <h3><u>MDR-1AM2 Headphones</u></h3>
+                            <h4>RM 1,299</h4>
+                            <div class="d-flex justify-content-around">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-dark shadow-none" data-toggle=modal data-target="#sony-head-1">Know more</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="sony-head-1" tabindex="-1" role="dialog" aria-labelledby="MDR-1AM2 Headphones" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">MDR-1AM2 Headphones</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="column-md-4">
+                                                            <img class="img-fluid" src="pictures/headphone-1.png">
+                                                        </div>
+                                                        <div class=column-md-8>
+                                                            <ul>
+                                                                <li>Price: RM 1,299</li>
+                                                                <li>High-Resolution Audio compatible</li>
+                                                                <li>Responsive Liquid Crystal Polymer driver for clarity</li>
+                                                                <li>Smartphone compatible with in-line remote mic3</li>
+                                                                <li>Heavyweight bass with Beat Response Control</li>
+                                                                <li>Swivel ear cups for portability</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                                                    <button type="button" class="btn btn-dark shadow-none" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="column earphone">
+                        <div class="content">
+                            <img src="pictures/headphone-2.png" alt="Sony Headband" style="width:100%"> 
+                            <h3><u>Z1R Premium Headphones</u></h3>
+                            <h4>RM 7,099</h4>
+                            <div class="d-flex justify-content-around">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-dark shadow-none" data-toggle=modal data-target="#sony-head-2">Know more</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="sony-head-2" tabindex="-1" role="dialog" aria-labelledby="Z1R Premium Headphones" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Z1R Premium Headphones</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="column-md-4">
+                                                            <img class="img-fluid" src="pictures/headphone-2.png">
+                                                        </div>
+                                                        <div class=column-md-8>
+                                                            <ul>
+                                                                <li>Price: RM 7,099</li>
+                                                                <li>Driver Unit:</b>70 mm, dome type (CCAW Voice Coil)</li>
+                                                                <li>Frequency Response:</b>4 Hz - 120,000 Hz</li>
+                                                                <li>High-Resolution Audio compatible</li>
+                                                                <li>Responsive Magnesium dome with Liquid Crystal Polymer edge diaphragm for clarity</li>
+                                                                <li>Resonance free housing</li>
+                                                                <li>Silver-coated oxygen-free copper cables</li>
+                                                                <li>Ergonomic sheepskin earpads</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                                                    <button type="button" class="btn btn-dark shadow-none" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="column earphone">
+                        <div class="content">
+                            <img src="pictures/headphone-3.png" alt="Sony Headband" style="width:100%"> 
+                            <h3><u>WH-1000XM5</u></h3>
+                            <h4>RM 1,799</h4>
+                            <div class="d-flex justify-content-around">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-dark shadow-none" data-toggle=modal data-target="#sony-head-3">Know more</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="sony-head-3" tabindex="-1" role="dialog" aria-labelledby="WH-1000XM5 Wireless Noise Cancelling Headphones" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">WH-1000XM5 Wireless Noise Cancelling Headphones</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="column-md-4">
+                                                            <img class="img-fluid" src="pictures/headphone-3.png">
+                                                        </div>
+                                                        <div class=column-md-8>
+                                                            <ul>
+                                                                <li>Price: RM 1,799</li>
+                                                                <li>HD Noise Cancelling Processor QN1, Integrated Processor V1 and multiple microphones for distraction-free listening</li>
+                                                                <li>Fully automatic Personal Noise Cancelling Optimiser and Atmospheric Pressure Optimising</li>
+                                                                <li>30mm specially designed driver unit for exceptional sound</li>
+                                                                <li>Superior noise-free calls with 2x2 beamforming microphones and noise reduction system (using AI)</li>
+                                                                <li>Super comfortable lightweight design in “Soft fit leather</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                                                    <button type="button" class="btn btn-dark shadow-none" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+        
+                <h4>Truly Wireless</h4>
+                <div class="row">
+                    <div class="column earphone">
+                        <div class="content">
+                            <img src="pictures/wireless-1.png" alt="Sony Headband" style="width:100%"> 
+                            <h3><u>LinkBuds S</u></h3>
+                            <h4>RM 929</h4>
+                            <div class="d-flex justify-content-around">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-dark shadow-none" data-toggle=modal data-target="#sony-wireless-1">Know more</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="sony-wireless-1" tabindex="-1" role="dialog" aria-labelledby="LinkBuds S" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">LinkBuds S</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="column-md-4">
+                                                            <img class="img-fluid" src="pictures/wireless-1.png">
+                                                        </div>
+                                                        <div class=column-md-8>
+                                                            <ul>
+                                                                <li>Price: RM 929</li>
+                                                                <li>Always on for connecting your online and offline worlds</li>
+                                                                <li>Automatically switches between optimised ambient sound and noise cancelling</li>
+                                                                <li>Ultra small, lightweight and super fit</li>
+                                                                <li>Immersive music and clear calls</li>
+                                                                <li>20 hours battery life with a 5 minute quick charge for up to 60 minutes of play time</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                                                    <button type="button" class="btn btn-dark shadow-none" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="column earphone">
+                        <div class="content">
+                            <img src="pictures/wireless-2.png" alt="Sony Headband" style="width:100%"> 
+                            <h3><u>WF-SP800N</u></h3>
+                            <h4>RM 929</h4>
+                            <div class="d-flex justify-content-around">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-dark shadow-none" data-toggle=modal data-target="#sony-wireless-2">Know more</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="sony-wireless-2" tabindex="-1" role="dialog" aria-labelledby="LinkBuds S" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">WF-SP800N Wireless Noise Cancelling Headphones for Sports</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="column-md-4">
+                                                            <img class="img-fluid" src="pictures/wireless-2.png">
+                                                        </div>
+                                                        <div class=column-md-8>
+                                                            <ul>
+                                                                <li>Price: RM 929</li>
+                                                                <li>Driver Unit: 6mm (Dome Type)</li>
+                                                                <li>Truly wireless design with stable BLUETOOTH® wireless connection</li>
+                                                                <li>IP55 rating for outdoor use and easy cleaning</li>
+                                                                <li>Up to 18hr 3 long battery life with charging case</li>
+                                                                <li>EXTRA BASS™ for deep, punchy sound</li>
+                                                                <li>Digital Noise Cancelling lets you listen without distractions</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                                                    <button type="button" class="btn btn-dark shadow-none" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="column earphone">
+                        <div class="content">
+                            <img src="pictures/wireless-3.png" alt="Sony Headband" style="width:100%"> 
+                            <h3><u>WF-1000XM4</u></h3>
+                            <h4>RM 1,099</h4>
+                            <div class="d-flex justify-content-around">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-dark shadow-none" data-toggle=modal data-target="#sony-wireless-3">Know more</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="sony-wireless-3" tabindex="-1" role="dialog" aria-labelledby="WF-1000XM4" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">WF-1000XM4 Wireless Noise Cancelling Headphones</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <div class="row">
+                                                        <div class="column-md-4">
+                                                            <img class="img-fluid" src="pictures/wireless-3.png">
+                                                        </div>
+                                                        <div class=column-md-8>
+                                                            <ul>
+                                                                <li>Price: RM 1,099</li>
+                                                                <li>Driver Unit: 6 mm</li>
+                                                                <li>DSEE Extreme: Yes</li>
+                                                                <li>Frequency Response(Bluetooth® Communication):</b>20Hz - 20,000Hz(44.1kHz sampling) / 20Hz - 40,000Hz(LDAC 96kHz sampling, 990kbps)</li>
+                                                                <li>Evolved Digital Noise Cancelling with Integrated Processor V1</li>
+                                                                <li>Sound quality with High-Resolution Audio Wireless</li>
+                                                                <li>Smart listening and clear call quality</li>
+                                                                <li>Ergonomic surface design for stable fit</li>
+                                                                <li>Water resistant and long battery life for everyday use</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                                                    <button type="button" class="btn btn-dark shadow-none" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn btn-dark shadow-none" href="order.html" role="button">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- END MAIN -->
+        </div>
+
+        <footer class="bg-secondary">
+            <div class="container">
+                <div class="row">
+                    <div class='col-md-4 text-left'><br>
+						  <img src='pictures/logo.png' width='85'>
+						  <p>SAITCARE HUB SDN BHD</p>
+					  </div>
+					  <div class='col-md-4 text-left'>
+						  <h4 style="text-decoration: none;">Links</h4>
+                          <div class="row">
+                              <ul class="col-md-6">
+					      	<li><a href='index.html'>Home</a></li>
+					      	<li><a href='profile.html'>About Us</a></li>
+                            <li><a href='product.html'>Products</a></li>
+						  </ul>
+						  <ul class="col-md-6">
+                            <li><a href='order.html'>Order Here</a></li>
+					      	<li><a href='contact.html'>Contact Us</a></li>
+					      	<li><a href='developer.html'>Developer</a></li>
+						  </ul>	
+                          </div>			  
+					  </div>
+					  <div class='col-md-4 text-left'>
+						  <h4>Contact Us</h4>
+						  <p>No 8, 8A, Jalan Universiti 1, Taman Universiti, 86400 Parit Raja, Johor<br>
+							 Phone: 012-366 3142<br>
+							 E-Mail: <a href='mailto:saitcarehub@gmail.com'>saitcarehub@gmail.com</a>
+					      </p>
+					  </div>
+                </div>
+                <p>COPYRIGHT: © 2022 SAITCARE HUB SDN. BHD. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script>
+            function displayAll(){
+                document.getElementById("laptop").style.display = "block";
+                document.getElementById("Printer").style.display = "block";
+                document.getElementById("earphone").style.display = "block";
+            }
+            function displayLaptop(){
+                document.getElementById("laptop").style.display = "block";
+                document.getElementById("Printer").style.display = "none";
+                document.getElementById("earphone").style.display = "none";
+            }
+            function displayPrinter(){
+                document.getElementById("laptop").style.display = "none";
+                document.getElementById("Printer").style.display = "block";
+                document.getElementById("earphone").style.display = "none";
+            }
+            function displayEarphone(){
+                document.getElementById("laptop").style.display = "none";
+                document.getElementById("Printer").style.display = "none";
+                document.getElementById("earphone").style.display = "block";
+            }
+
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function(){
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+            }
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>   
+</html> 
